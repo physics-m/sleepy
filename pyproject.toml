@@ -36,3 +36,6 @@ issues = "https://github.com/sleepy-project/sleepy/issues"
 [tool.sleepy-plugin]
 version = [5, 2, 0]
 version-str = "5.2-release-20251214"
+
+[tool.vercel]
+entrypoint = "main:app"
