@@ -166,7 +166,7 @@ class _PageConfigModel(BaseModel):
     - *可为绝对路径 / 相对路径 url*
     '''
 
-    background: str = 'https://imgapi.siiway.top/image'
+    background: str = ''
     '''
     `page.background`
     背景图片 url / api
@@ -242,8 +242,8 @@ class _StatusConfigModel(BaseModel):
 
     status_list: list[_StatusItemModel] = [
         _StatusItemModel(
-            name='活着',
-            desc='目前在线，可以通过任何可用的联系方式联系本人。',
+            name='魂火未熄',
+            desc='意识仍游于诸界，可由灵途触及其残响。',
             color='awake'
         ),
         _StatusItemModel(
