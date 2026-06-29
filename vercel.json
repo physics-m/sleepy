@@ -14,18 +14,7 @@
   ],
   "functions": {
     "api/index.py": {
-      "includeFiles": [
-        "main.py",
-        "config.py",
-        "data.py",
-        "models.py",
-        "plugin.py",
-        "utils.py",
-        "pyproject.toml",
-        "theme/**",
-        "plugins/**",
-        "data/**"
-      ]
+      "includeFiles": "{main.py,config.py,data.py,models.py,plugin.py,utils.py,pyproject.toml,theme/**,plugins/**,data/**}"
     }
   }
 }
