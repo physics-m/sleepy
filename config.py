@@ -25,7 +25,10 @@ class Config:
         perf = u.perf_counter()  # 性能计数器
 
         # ===== prepare .env =====
-        load_dotenv(dotenv_path=u.get_path('data/.env'))
+        if os.environ.get("VERCEL"):
+            load_dotenv(dotenv_path="/tmp/.env")
+        else:
+            load_dotenv(dotenv_path=u.get_path("data/.env"))
         config_env = {}
         try:
             # 筛选有效配置项
